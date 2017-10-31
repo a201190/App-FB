@@ -1,0 +1,13 @@
+.LeftImg{
+    width:100px;
+    height: 100px;
+    padding: 2px;
+}
+/* Right */
+.fName, .lName, .Male, .Female{
+    display: table-cell;
+}
+.Male label{
+        margin-right:33px;
+        margin-left: 18px;
+}

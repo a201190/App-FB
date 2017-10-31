@@ -1,0 +1,19 @@
+.LinkButton:hover{
+    text-decoration: none;
+}
+.LinkButton{
+    width: 100%;
+    padding: 6px;
+    margin: 6px;
+}
+/* NewsFeedHeader */
+.NewsFeedHeaderTextArea{
+    height: 300px;
+    resize: none;
+}
+.btn-secondary:hover, .btn-secondary:focus,.btn-secondary{
+    outline: none;
+    background: #fff;
+    color: black;
+    border: 0;
+}
