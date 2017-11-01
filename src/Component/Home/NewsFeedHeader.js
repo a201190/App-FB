@@ -1,7 +1,6 @@
 import React from 'react';
-import { Input, TabContent, TabPane, Nav, NavItem, NavLink, Button, Row, Col } from 'reactstrap';
+import { Input, TabContent, TabPane, Nav, NavItem, NavLink, Button, Row, Col,Label } from 'reactstrap';
 import classnames from 'classnames';
-
 class NewsFeedHeader extends React.Component{
     constructor(props) {
         super(props);
@@ -17,7 +16,8 @@ class NewsFeedHeader extends React.Component{
           });
         }
       }
-    render(){
+      
+      render(){
         return(
             <div>
             <Nav tabs style={{width:'429.2px'}}>
@@ -29,8 +29,9 @@ class NewsFeedHeader extends React.Component{
                   Compose Post
                 </NavLink>
               </NavItem>
+                <Label for="file-upload" className="takeFile">Audio/Video</Label>
+                <Input id="file-upload" type="file" style={{display:'none'}}/>
               <NavItem>
-                  <Button className="btn-secondary">Video/Album</Button>
               </NavItem>
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
