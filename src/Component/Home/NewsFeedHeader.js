@@ -32,12 +32,12 @@ class NewsFeedHeader extends React.Component{
         reader.onloadend=()=>{
           this.setState({currentValue:reader.result, file:file})
         }
-        reader.readAsDataURL(file)        
+        reader.readAsDataURL(file)
       }
       fileUpload(){
         let val;
         if(this.state.active===true){
-        val=<img src={this.state.currentValue} alt="img" className="ImageUpload"/>
+        val=(<video width="320" height="240" controls><source src={this.state.currentValue} type="video/mp4"/><source src="movie.ogg" type="video/ogg"/></video>)
       }
       else{
         val=<Input type="textarea"  className="NewsFeedHeaderTextArea"/>
@@ -45,7 +45,7 @@ class NewsFeedHeader extends React.Component{
       return val;
       }
       render(){
-        console.log(this.state.active)
+        console.log(this.state.currentValue)
         return(
             <div style={{width: '100%'}}>
             <Nav tabs>
@@ -61,7 +61,7 @@ class NewsFeedHeader extends React.Component{
                 <Label for="file-upload" className="takeFile" onClick={this.togglediv}>Audio/Video</Label>
                 <Input id="file-upload" accept="audio/*|video/*|image/*|media_type" type="file" style={{display:'none'}} onChange={this.TakeFile} />
               </NavItem>
-            </Nav>  
+            </Nav>
             <TabContent activeTab={this.state.activeTab}>
               <TabPane tabId="1">
                 <Row>
@@ -76,7 +76,7 @@ class NewsFeedHeader extends React.Component{
             <NavItem>bind</NavItem>
             <NavItem>class</NavItem>
             <NavItem>default</NavItem>
-            <NavItem>export</NavItem>            
+            <NavItem>export</NavItem>
             </Nav>
           </div>
         );

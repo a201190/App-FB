@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import './style.scss'
 import {Container, Row, Col} from 'reactstrap';
 import LinkTable from '../../Component/Home/LinkTable';
 import NewsFeeds from '../../Component/Home/NewsFeeds';
@@ -12,10 +12,10 @@ class Home extends React.Component{
                     <Col md="2"><LinkTable /></Col>
                     <Col md="4">
                     <Row><NewsFeedHeader /></Row>
-                    <Row><NewsFeeds /></Row>                    
+                    <Row><NewsFeeds /></Row>
                     </Col>
                     <Col md="4">hell</Col>
-                    <Col md="2">hell</Col>                    
+                    <Col md="2">hell</Col>
                 </Row>
             </Container>
         )
