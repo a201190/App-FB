@@ -37,7 +37,7 @@ class NewsFeedHeader extends React.Component{
       fileUpload(){
         let val;
         if(this.state.active===true){
-        val=(<video width="320" height="240" controls><source src={this.state.currentValue} type="video/mp4"/><source src="movie.ogg" type="video/ogg"/></video>)
+        val=<img src={this.state.currentValue} alt="img" className="ImageUpload"/>
       }
       else{
         val=<Input type="textarea"  className="NewsFeedHeaderTextArea"/>
@@ -59,7 +59,7 @@ class NewsFeedHeader extends React.Component{
               </NavItem>
               <NavItem>
                 <Label for="file-upload" className="takeFile" onClick={this.togglediv}>Audio/Video</Label>
-                <Input id="file-upload" accept="audio/*|video/*|image/*|media_type" type="file" style={{display:'none'}} onChange={this.TakeFile} />
+                <Input id="file-upload" type="file" style={{display:'none'}} onChange={this.TakeFile} />
               </NavItem>
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
