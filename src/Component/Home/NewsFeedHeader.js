@@ -1,7 +1,6 @@
 import React from 'react';
 import { Input, TabContent, TabPane, Nav, NavItem, NavLink, Row, Col,Label } from 'reactstrap';
 import classnames from 'classnames';
-import { Player } from 'video-react'
 class NewsFeedHeader extends React.Component{
     constructor(props) {
         super(props);
@@ -38,15 +37,15 @@ class NewsFeedHeader extends React.Component{
       fileUpload(){
         let val;
         if(this.state.active===true){
-        //val=<img src={this.state.currentValue} alt="img" className="ImageUpload"/>
-          <Player src={this.state.currentValue}  playsInline poster={this.state.currentValue}/>
+        val=<img src={this.state.currentValue} alt="img" className="ImageUpload"/>
       }
       else{
-        val=<Input type="textarea" className="NewsFeedHeaderTextArea" value={this.state.file}/>
+        val=<Input type="textarea"  className="NewsFeedHeaderTextArea"/>
       }
       return val;
       }
       render(){
+        console.log(this.state.currentValue)
         return(
             <div style={{width: '100%'}}>
             <Nav tabs>
