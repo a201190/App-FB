@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input, TabContent, TabPane, Nav, NavItem, NavLink, Row, Col,Label } from 'reactstrap';
 import classnames from 'classnames';
+//import {Player} from 'video-react';
 class NewsFeedHeader extends React.Component{
     constructor(props) {
         super(props);
@@ -38,6 +39,12 @@ class NewsFeedHeader extends React.Component{
         let val;
         if(this.state.active===true){
         val=<img src={this.state.currentValue} alt="img" className="ImageUpload"/>
+        //val=<video className="ImageUpload" controls src='https://media.w3.org/2010/05/sintel/trailer_hd.mp4'/>
+        // val= <Player className="ImageUpload"
+        //         playsInline
+        //         poster=""
+        //         src={this.state.currentValue}
+        //       />
       }
       else{
         val=<Input type="textarea"  className="NewsFeedHeaderTextArea"/>
@@ -45,7 +52,6 @@ class NewsFeedHeader extends React.Component{
       return val;
       }
       render(){
-        console.log(this.state.currentValue)
         return(
             <div style={{width: '100%'}}>
             <Nav tabs>
@@ -72,11 +78,9 @@ class NewsFeedHeader extends React.Component{
               </TabPane>
             </TabContent>
             <Nav tabs>
-            <NavItem>active</NavItem>
-            <NavItem>bind</NavItem>
-            <NavItem>class</NavItem>
-            <NavItem>default</NavItem>
-            <NavItem>export</NavItem>
+            <NavItem>
+              <button type="submit">post</button>
+            </NavItem>
             </Nav>
           </div>
         );
