@@ -79,7 +79,6 @@ class NewsFeedHeader extends React.Component{
             </TabContent>
             <Nav tabs>
             <NavItem>
-              <button type="submit">post</button>
             </NavItem>
             </Nav>
           </div>

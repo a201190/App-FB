@@ -4,6 +4,7 @@ import {Container, Row, Col} from 'reactstrap';
 import LinkTable from '../../Component/Home/LinkTable';
 import NewsFeeds from '../../Component/Home/NewsFeeds';
 import NewsFeedHeader from '../../Component/Home/NewsFeedHeader'
+import Stories from '../../Component/NewsFeed/stories'
 class Home extends React.Component{
     render(){
         return(
@@ -14,7 +15,7 @@ class Home extends React.Component{
                     <Row><NewsFeedHeader /></Row>
                     <Row><NewsFeeds /></Row>
                     </Col>
-                    <Col md="4">hell</Col>
+                    <Col md="4"><Stories/></Col>
                     <Col md="2">hell</Col>
                 </Row>
             </Container>
