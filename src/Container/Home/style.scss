@@ -48,28 +48,71 @@
         border-radius: 50%;
     }
 }
-
-            
-
-
-#tooltip {
-    position: relative;
-    display: inline-block;
-    margin: 7px;
+.storiess{
+    width: 100%;
+    height: 160px;
+    background: aliceblue;
+    padding: 5px;
+    border-radius: 12px;
+    #tooltip {
+        position: relative;
+        display: inline-block;
+        margin: 7px;
+    }
+    #tooltip .tooltiptext {
+        visibility: hidden;
+        width: max-content;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 4px 5px;
+        position: absolute;
+        margin: 17px 0px 0px -370px;
+    }
+    #tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
 }
-#tooltip .tooltiptext {
-    visibility: hidden;
-    width: max-content;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 4px 5px;
-    /* Position the tooltip */
-    position: absolute;
-    margin: 17px 0px 0px -370px;
-}
-#tooltip:hover .tooltiptext {
-    visibility: visible;
-}
 
+.Trending{
+    width: 100%;
+    height: 300px;
+    background: aliceblue;;
+    margin-top: 10px;
+    padding: 6px;
+    border-radius: 12px;
+    .trendingInline{
+        align-self: stretch;    
+        display: flex;
+        justify-content: space-between;
+    }
+    .TrendingIcon{
+        list-style-type: none;
+        display: flex;        
+        margin: -4px 0;
+        position: relative;
+        padding: 5px;
+    }
+    .TrendingIcon>li>.Link>i{
+        font-size: 25px;
+        padding: 4px;
+    }
+    .TrendingIcon>li>.Link>i .tooltriptext2 {
+        visibility: hidden;
+        width: max-content;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 4px 5px;
+        position: absolute;
+        margin: -35px 0px 0px -43px;
+    }
+    .TrendingIcon>li>.Link>i:hover .tooltriptext2 {
+        visibility: visible;
+    }
+    .Link{
+        padding: 0;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import {NavLink} from 'reactstrap'
+import {NavLink} from 'reactstrap';
+import Trending from './trending'
 class Stories extends React.Component{
     constructor(){
         super();
@@ -17,6 +18,7 @@ render(){
     console.log(this.state.toggle)
     return(
         <div>
+        <div className="storiess">
         <div className="storiesHeader">
             <h3>Stories</h3>
                 <i className="fa fa-question" id="tooltip">
@@ -30,6 +32,10 @@ render(){
                     <NavLink key={i} href={data.link} className="link"><img className="stories" src={data.header} alt="header"/></NavLink>
                 );
             })}
+        </div>
+        </div>
+        <div className="Trending">
+            <Trending/>
         </div>
         </div>
     );
