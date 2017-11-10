@@ -78,7 +78,7 @@
 
 .Trending{
     width: 100%;
-    background: aliceblue;;
+    background: aliceblue;
     margin-top: 10px;
     padding: 6px;
     border-radius: 12px;
@@ -126,4 +126,49 @@
         display: block;
         font-size: 12px;
     }
+}
+.Suggetion{
+width: 100%;
+background: aliceblue;
+margin-top: 10px;
+padding: 6px;
+border-radius: 12px;
+.header{
+    align-self: stretch;
+    display: flex;    
+    justify-content: space-between;
+    }
+    .header>span{
+        height: fit-content;
+        cursor: pointer;
+    }
+    .header>span:hover{
+        border-bottom:1px solid green; 
+    }
+    .Image{
+        height: 225px; 
+        width: 100%;    
+    }
+    #Images .model{
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 333px;
+        width: 100%;
+        border-radius: 12px;
+        padding: 6px;
+        background: aqua;
+        left:0;
+        cursor: pointer;
+    }
+    #Images:hover .model {
+        visibility: visible;
+    }
+}
+.Chat{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top:10px; 
 }

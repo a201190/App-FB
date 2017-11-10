@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavLink} from 'reactstrap';
-import Trending from './Trending/trending'
+import Trending from './Trending/trending';
+import Suggetion from './suggation/index'
 class Stories extends React.Component{
     constructor(){
         super();
@@ -36,6 +37,7 @@ render(){
         <div className="Trending">
             <Trending/>
         </div>
+            <Suggetion/>
         </div>
     );
 }
