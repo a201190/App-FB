@@ -28,6 +28,13 @@ class Trending extends React.Component{
           });
         }
       }
+      IconColor(tab){
+          let val;
+          if(this.state.activeTab===tab){
+            val=({color: 'blueviolet', borderBottom:'1px solid green'})
+          }
+          return val;
+      }
     render(){
         return(
             <div>
@@ -35,27 +42,27 @@ class Trending extends React.Component{
             <h3>Trending</h3>
             <ul className="TrendingIcon">
                 <li className={classnames({toggle: this.state.activeTab === '1'})} onClick={(()=>{this.toggleDiv('1')})}>
-                    <i className="fa fa-line-chart" aria-hidden="true">
+                    <i className="fa fa-line-chart" aria-hidden="true" style={this.IconColor('1')}>
                         <span className="tooltriptext2">Trending</span>
                     </i>
                 </li>                
                 <li className={classnames({toggle: this.state.activeTab === '2'})} onClick={(()=>{this.toggleDiv('2')})}>
-                    <i className="fa fa-futbol-o" aria-hidden="true">
+                    <i className="fa fa-futbol-o" aria-hidden="true" style={this.IconColor('2')}>
                         <span className="tooltriptext2">Sports</span>
                     </i>
                 </li>
                 <li className={classnames({toggle: this.state.activeTab === '3'})} onClick={(()=>{this.toggleDiv('3')})}>
-                    <i className="fa fa-film" aria-hidden="true">
+                    <i className="fa fa-film" aria-hidden="true" style={this.IconColor('3')}>
                         <span className="tooltriptext2">Entertainment</span>
                     </i>
                 </li>
                 <li className={classnames({toggle: this.state.activeTab === '4'})} onClick={(()=>{this.toggleDiv('4')})}>
-                    <i className="fa fa-home" aria-hidden="true">
+                    <i className="fa fa-home" aria-hidden="true" style={this.IconColor('4')}>
                         <span className="tooltriptext2">Politics</span>
                     </i>
                 </li>
                 <li className={classnames({toggle: this.state.activeTab === '5'})} onClick={(()=>{this.toggleDiv('5')})}>
-                    <i className="fa fa-flask" aria-hidden="true">
+                    <i className="fa fa-flask" aria-hidden="true" style={this.IconColor('5')}>
                         <span className="tooltriptext2">Science and Technology</span>
                     </i>
                 </li>
