@@ -1,13 +1,17 @@
 import React from 'react';
 import classnames from 'classnames';
 import {TabContent, TabPane} from 'reactstrap';
+import Trend from './trend';
+import Sports from './sports';
+import Entertainment from './entartainment';
+import Politics from './politics';
+import ScienceTech from './Science&Tech'
 class Trending extends React.Component{
     constructor(){
         super();
         this.toggle=this.toggle.bind(this);
         this.toggleDiv=this.toggleDiv.bind(this);
         this.state={
-            data:[{},{}],
             toggle:false,
             activeTab:'1'
         }
@@ -58,50 +62,20 @@ class Trending extends React.Component{
             </ul>
             </div>
             <TabContent activeTab={this.state.activeTab}>
-            <TabPane tabId="1">
-                {this.state.data.map((data, i)=>{
-                    return(
-                        <div key={i}>
-                            <span>hello</span>
-                        </div>
-                    );
-                })}
+                <TabPane tabId="1">
+                    <Trend/>
                 </TabPane>
                 <TabPane tabId="2">
-                {this.state.data.map((data, i)=>{
-                    return(
-                        <div key={i}>
-                            <span>Amit</span>
-                        </div>
-                    );
-                })}
+                    <Sports/>
                 </TabPane>
                 <TabPane tabId="3">
-                {this.state.data.map((data, i)=>{
-                    return(
-                        <div key={i}>
-                            <span>Kumar</span>
-                        </div>
-                    );
-                })}
+                    <Entertainment/>
                 </TabPane>
                 <TabPane tabId="4">
-                {this.state.data.map((data, i)=>{
-                    return(
-                        <div key={i}>
-                            <span>Sharma</span>
-                        </div>
-                    );
-                })}
+                    <Politics/>
                 </TabPane>
                 <TabPane tabId="5">
-                {this.state.data.map((data, i)=>{
-                    return(
-                        <div key={i}>
-                            <span>Motiya</span>
-                        </div>
-                    );
-                })}
+                    <ScienceTech/>
                 </TabPane>
             </TabContent>
             </div>

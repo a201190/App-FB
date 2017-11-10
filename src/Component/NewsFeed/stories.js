@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'reactstrap';
-import Trending from './trending'
+import Trending from './Trending/trending'
 class Stories extends React.Component{
     constructor(){
         super();
