@@ -94,11 +94,11 @@
         position: relative;
         padding: 5px;
     }
-    .TrendingIcon>li>.Link>i{
+    .TrendingIcon>li>i{
         font-size: 25px;
         padding: 4px;
     }
-    .TrendingIcon>li>.Link>i .tooltriptext2 {
+    .TrendingIcon>li>i .tooltriptext2 {
         visibility: hidden;
         width: max-content;
         background-color: black;
@@ -109,10 +109,7 @@
         position: absolute;
         margin: -35px 0px 0px -43px;
     }
-    .TrendingIcon>li>.Link>i:hover .tooltriptext2 {
+    .TrendingIcon>li>i:hover .tooltriptext2 {
         visibility: visible;
-    }
-    .Link{
-        padding: 0;
     }
 }
