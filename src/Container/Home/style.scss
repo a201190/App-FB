@@ -170,28 +170,36 @@ border-radius: 12px;
     }
 }
 .chat{
-    position: fixed;
     background: aliceblue;
-    top:55px;    
-    width: 100%;
-    height: 600px;
-    .ChatBox{
-        position: fixed;
-        height: 500px;
-        overflow-x: auto;
-    }
-    .ChatHeight{
-            .Chat{
-                height: 40px;
-                width: 40px;
-                border-radius: 50%;
-                border: 2px solid black;
-                margin-top:10px; 
+    height: 700px;
+    top:56px;
+}
+.ChatBox{
+    top: 56px;    
+    position: fixed;    
+    height: 560px;
+    right: 0;
+    overflow-x: auto;
+    .hoverProfile{
+        width: 100%;
+        display: flex;
+        .ProfImg{
+            position: relative;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-top: 10px;
         }
     }
-    .ChatSearch{
-        position: absolute;
-        bottom: 0
+    .hoverProfile>span{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 17px;
     }
-    
+}
+.ChatsearchBox{
+    position: fixed;
+    bottom: 0;
 }

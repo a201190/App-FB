@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal } from 'reactstrap';
+import ChatSearch from './chatsearch'
 class Chat extends React.Component{
     constructor(){
         super();
@@ -72,16 +73,21 @@ class Chat extends React.Component{
     }
     render() {
         return (
-            <div className="ChatBox">
-            {this.state.data.map((data, i)=>{
-                return(
-                <div key={i} onClick={this.toggle}>
-                    <img src={data.link} alt="Profile" className="Chat"/>
-                    <span>{data.name}</span>
+            <div className="chat">
+                <div className="ChatBox">
+                {this.state.data.map((data, i)=>{
+                    return(
+                    <div key={i} onClick={this.toggle} className="hoverProfile">
+                        <img src={data.link} alt="Profile" className="ProfImg"/>
+                        <span>{data.name}</span>
+                    </div>
+                );
+                })}
+                {this.renderContent()}
                 </div>
-            );
-            })}
-            {this.renderContent()}
+                <div className="ChatsearchBox">
+                    <ChatSearch data={this.state.data.map((data)=>{return data})}/>
+                </div>
             </div>
         );
     }

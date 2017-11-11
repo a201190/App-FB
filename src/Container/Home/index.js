@@ -17,12 +17,7 @@ class Home extends React.Component{
                         <Row><NewsFeeds /></Row>
                     </Col>
                     <Col md="4" style={{top:'56px'}}><Stories/></Col>
-                    <Col md="2" className="chat">
-                        <Row className="ChatHeight"><Chat/></Row>
-                        <Row>
-                            <h1 className="ChatSearch">Amit</h1>
-                        </Row>
-                    </Col>
+                    <Col md="2"><Chat/></Col>
                 </Row>
             </Container>
         )
