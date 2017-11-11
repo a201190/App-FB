@@ -8,6 +8,15 @@ class Chat extends React.Component{
         this.state={
             data:[
                 {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Prity Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Alok Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Binita Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Usha Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Bikash Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Arun Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Shadashiv Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Janardhan Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Rakesh Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
                 {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
                 {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
                 {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
@@ -36,7 +45,15 @@ class Chat extends React.Component{
                 {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
                 {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
                 {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
-                
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},
+                {name:'Amit Kumar Sharma', link:require('../../NewsFeed/storiesImg/gmail.png')},                
             ],
             isOpen:false
         }
@@ -55,7 +72,7 @@ class Chat extends React.Component{
     }
     render() {
         return (
-            <div>
+            <div className="ChatBox">
             {this.state.data.map((data, i)=>{
                 return(
                 <div key={i} onClick={this.toggle}>

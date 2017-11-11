@@ -12,12 +12,17 @@ class Home extends React.Component{
             <Container fluid>
                 <Row>
                     <Col md="2"><LinkTable /></Col>
-                    <Col md="4">
-                    <Row><NewsFeedHeader /></Row>
-                    <Row><NewsFeeds /></Row>
+                    <Col md="4" style={{top:'56px'}}>
+                        <Row ><NewsFeedHeader /></Row>
+                        <Row><NewsFeeds /></Row>
                     </Col>
-                    <Col md="4"><Stories/></Col>
-                    <Col md="2" style={{padding:'0px'}}><Chat/></Col>
+                    <Col md="4" style={{top:'56px'}}><Stories/></Col>
+                    <Col md="2" className="chat">
+                        <Row className="ChatHeight"><Chat/></Row>
+                        <Row>
+                            <h1 className="ChatSearch">Amit</h1>
+                        </Row>
+                    </Col>
                 </Row>
             </Container>
         )

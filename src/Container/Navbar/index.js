@@ -24,7 +24,7 @@ class NavBar extends React.Component{
             <Button type="submit">Login</Button>
         </Form>;
         return(
-            <div>
+            <div className="NavBar">
                 <Navbar style={{background:'green'}} light expand="md">
                     <NavbarBrand href="/">Welcome to Amit</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />

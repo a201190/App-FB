@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 class LinkTable extends React.Component{
     render(){
         return(
-            <div>
+            <div className="LinkTable">
                 <div>
                     <Link type="button" to="/home" className="LinkButton">Profile</Link>
                 </div>
